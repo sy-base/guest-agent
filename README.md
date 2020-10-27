@@ -178,6 +178,7 @@ Accounts          | gpasswd\_add\_cmd      | Command string to add a user to a g
 Accounts          | gpasswd\_remove\_cmd   | Command string to remove a user from a group.
 Accounts          | groupadd\_cmd          | Command string to create a new group.
 Daemons           | accounts\_daemon       | `false` disables the accounts daemon.
+Daemons           | oslogin\_daemon        | `false` disables the oslogin daemon.
 Daemons           | clock\_skew\_daemon    | `false` disables the clock skew daemon.
 Daemons           | network\_daemon        | `false` disables the network daemon.
 InstanceSetup     | host\_key\_types       | Comma separated list of host key types to generate.
