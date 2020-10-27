@@ -67,7 +67,8 @@ func (o *osloginMgr) timeout() bool {
 }
 
 func (o *osloginMgr) disabled(os string) bool {
-	return os == "windows"
+        enabled := config.Section("Daemons").Key("oslogin_daemon").MustBool(true)
+        return os == "windows" || !enabled
 }
 
 func (o *osloginMgr) set() error {
